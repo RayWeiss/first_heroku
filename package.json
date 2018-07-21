@@ -1,0 +1,21 @@
+{
+  "name": "node-example",
+  "version": "1.0.0",
+  "description": "This example is so cool.",
+  "main": "web.js",
+  "scripts": {
+    "start": "node web.js"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "ray-weiss",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "engines": {
+    "node": "8.11.3"
+  }
+}
