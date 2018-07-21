@@ -1,6 +1,14 @@
-const express = require('express')
-const app = express()
+var express = require("express");
+var app = express();
 
-app.get('/', (req, res) => res.send('Hello World!'))
+// Set up a URL route
+app.get("/", function(req, res) {
+ res.send("Ray's Heroku Demo!");
+});
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+// bind the app to listen for connections on a specified port
+var port = process.env.PORT || 3000;
+app.listen(port);
+
+// Render some console log output
+console.log("Listening on port " + port);
